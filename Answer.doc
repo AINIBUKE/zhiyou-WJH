@@ -56,11 +56,13 @@
 　　　Art-template是模板引擎，渲染数据到页面
 
 22，请写出art-template在浏览器端的使用过程。
-　　　
+　　　引入jquery.js，artTemplate.js文件，把标签中内容改为{{}}
+　　　格式，从json文件中获取数据
 　　　
 22，请说出如何在服务端使用art-template
-
-　　　
+　　　加载art-template模块，使用get请求，获取data中数据
+　　　var html =template(‘test’,data)
+　　　Response.end(html)
 
 23，请把该试卷以及答案提交到gitHub远程仓库。
 要求：1，在master分支存放试题答案，test分支存放试卷源码。
